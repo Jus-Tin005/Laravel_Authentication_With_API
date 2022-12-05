@@ -3,3 +3,50 @@ composer create-project laravel/laravel PROJECTNAME
 php artisan serve
 
 http://localhost:8000/
+
+php artisan make:model Product --migration
+
+php artisan migrate
+
+php artisan make:controller ProductController --api
+
+php artisan route:list
+
+
+laravel new PROJECT NAME
+
+
+composer require larvel/sanctum
+
+php artisan vendor:publish --provider="Laravel\Sanctum\SanctumServiceProvider"
+
+
+create database laravel_sanctum
+
+php artisan make:controller AuthController
+
+php artisan make:controller TaskController -r
+
+php artisan make:model Task -m
+
+php artisan route:list
+
+
+
+
+#ERROR
+
+php artisan make:request StoreRequest
+
+php artisan make:factory TaskFactory
+
+php artisan tinker
+User::factory()->times(25)->create();
+Task::factory()->times(250)->create();
+
+php artisan make:resource TaskResource
+
+
+php artisan schedule:list
+php artisan schedule:work
+
